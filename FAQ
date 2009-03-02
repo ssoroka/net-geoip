@@ -1,0 +1,12 @@
+Q: What is the "Error reading file ./test/../Rakefile" message in the test output?
+
+A: libGeoIP prints its error messages to the standard error, instead of providing a way for the application to get the error message itself.  This is not an indication of an unexpected error, it is an expected error that is being tested for, and is not a cause for concern.
+
+
+Q: Received an error running rake:
+
+dyld: lazy symbol binding failed: Symbol not found: _GeoIP_open
+  Referenced from: lib/net/geoip.bundle
+  Expected in: dynamic lookup
+
+A: 

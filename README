@@ -1,0 +1,19 @@
+= Net::GeoIP
+
+== What this is
+
+This project contains the Net::GeoIP module to interface with the GeoIP library provided by MaxMind.
+
+== What to do
+
+To run the installer and tests, type:
+
+  rake
+
+
+== Credits
+
+[Sean Chittenden] Original code 
+[Steven Baker]    Updated (details?)
+[MaxMind]         Patched
+[Steven Soroka]   Applied patch and moved to Github

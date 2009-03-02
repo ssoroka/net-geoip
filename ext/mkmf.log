@@ -1,0 +1,36 @@
+have_library: checking for GeoIP_new() in -lGeoIP... -------------------- no
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I.  -arch ppc -arch i386 -Os -pipe -fno-common conftest.c  -L"." -L"/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib" -L. -arch ppc -arch i386     -lruby -lGeoIP  -lpthread -ldl -lm  "
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘GeoIP_new’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+conftest.c: In function ‘t’:
+conftest.c:3: error: ‘GeoIP_new’ undeclared (first use in this function)
+conftest.c:3: error: (Each undeclared identifier is reported only once
+conftest.c:3: error: for each function it appears in.)
+lipo: can't figure out the architecture type of: /var/folders/fT/fTmf182rGMC4m3pzEVuhy++++TI/-Tmp-//ccQZzE1R.out
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { void ((*volatile p)()); p = (void ((*)()))GeoIP_new; return 0; }
+/* end */
+
+"gcc -o conftest -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I.  -arch ppc -arch i386 -Os -pipe -fno-common conftest.c  -L"." -L"/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib" -L. -arch ppc -arch i386     -lruby -lGeoIP  -lpthread -ldl -lm  "
+ld warning: in /usr/local/lib/libGeoIP.dylib, file is not of required architecture
+Undefined symbols for architecture ppc:
+  "_GeoIP_new", referenced from:
+      _t in ccJ5QcU0.o
+ld: symbol(s) not found for architecture ppc
+collect2: ld returned 1 exit status
+lipo: can't open input file: /var/folders/fT/fTmf182rGMC4m3pzEVuhy++++TI/-Tmp-//ccX398gk.out (No such file or directory)
+checked program was:
+/* begin */
+1: /*top*/
+2: int main() { return 0; }
+3: int t() { GeoIP_new(); return 0; }
+/* end */
+
+--------------------
+

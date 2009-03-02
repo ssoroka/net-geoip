@@ -1,0 +1,3 @@
+gcc -I. -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I.  -fno-common -arch ppc -arch i386 -Os -pipe -fno-common  -c geoip.c
+gcc -I. -I. -I/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/universal-darwin9.0 -I.  -fno-common -arch ppc -arch i386 -Os -pipe -fno-common  -c record.c
+cc -arch ppc -arch i386 -pipe -bundle -undefined dynamic_lookup -o geoip.bundle geoip.o record.o -L"." -L"/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib" -L. -arch ppc -arch i386    -lruby  -lpthread -ldl -lm  
