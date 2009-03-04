@@ -9,4 +9,6 @@ dyld: lazy symbol binding failed: Symbol not found: _GeoIP_open
   Referenced from: lib/net/geoip.bundle
   Expected in: dynamic lookup
 
-A: 
+A: preface the command with ARCHFLAGS="-arch i386".  If you were running rake when it happened, it'd be:
+
+  ARCHFLAGS="-arch i386" rake

@@ -9,6 +9,13 @@ This project contains the Net::GeoIP module to interface with the GeoIP library 
 To run the installer and tests, type:
 
   rake
+  
+
+== Usage
+
+If the bundle installed correctly, the tests should pass and you should be able to do require 'net/geoip'
+
+
 
 
 == Credits
@@ -16,4 +23,4 @@ To run the installer and tests, type:
 [Sean Chittenden] Original code 
 [Steven Baker]    Updated (details?)
 [MaxMind]         Patched
-[Steven Soroka]   Applied patch and moved to Github
+[Steven Soroka]   Applied patch and moved to Github, gemified, misc improvements
